@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 
 LABEL_TO_IDX = {
-    "NIL": 0,
+    "NILM": 0,
     "LSIL": 1,
     "HSIL": 2,
 }
@@ -42,9 +42,6 @@ class CytologyDataset(Dataset):
     def __init__(self, csv_path: str | Path, split: str, image_size: int = 224):
         self.csv_path = Path(csv_path)
         self.df = pd.read_csv(self.csv_path).copy()
-
-        # Safety patch
-        self.df["label"] = self.df["label"].replace({"NILM": "NIL"})
 
         self.split = split
         self.transform = get_transforms(split=split, image_size=image_size)

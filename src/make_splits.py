@@ -12,14 +12,11 @@ def main():
 
     df = pd.read_csv(INDEX_CSV)
 
-    # Safety patch so old Phase 0 CSVs still work.
-    df["label"] = df["label"].replace({"NILM": "NIL"})
-
     # Raw images only.
     df = df[df["is_annotated"] == False].copy()
 
     # Keep only known labels.
-    df = df[df["label"].isin(["NIL", "LSIL", "HSIL"])].copy()
+    df = df[df["label"].isin(["NILM", "LSIL", "HSIL"])].copy()
 
     # Clean columns.
     df = df[["filepath", "filename", "label", "is_annotated"]].reset_index(drop=True)

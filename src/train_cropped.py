@@ -27,10 +27,10 @@ LR_HEAD = 1e-3
 LR_FINETUNE = 1e-4
 WEIGHT_DECAY = 1e-4
 
-TRAIN_CSV = "data/train.csv"
-VAL_CSV = "data/val.csv"
+TRAIN_CSV = "data/train_cropped.csv"
+VAL_CSV = "data/val_cropped.csv"
 
-RESULTS_DIR = Path("results/phase2_resnet50_full")
+RESULTS_DIR = Path("results/phase2_resnet50_cropped")
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
