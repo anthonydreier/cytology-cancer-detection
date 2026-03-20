@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+data/index.csv
+results/
+*.pth
+*.pt
+*.png
+*.jpg
+*.jpeg
+.DS_Store
+Thumbs.db
