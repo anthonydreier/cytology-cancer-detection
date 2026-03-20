@@ -1,0 +1,4 @@
+some future ideas:
+- early stopping
+- train a bit longer, 15-20 total epochs?
+- use an lr scheduler (ReduceLROnPlateau?) or cosine decay maybe

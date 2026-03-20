@@ -22,7 +22,6 @@ def get_transforms(split: str, image_size: int = 224):
         return transforms.Compose([
             transforms.Resize((image_size, image_size)),
             transforms.RandomHorizontalFlip(p=0.5),
-            transforms.RandomRotation(degrees=10, fill=(255, 255, 255)),
             transforms.ColorJitter(
                 brightness=0.08,
                 contrast=0.08,
