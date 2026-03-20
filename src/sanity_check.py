@@ -10,7 +10,7 @@ VALID_EXTS = {".jpg", ".jpeg", ".png"}
 def infer_label(name: str) -> str:
 	upper = name.upper()
 	if upper.startswith("NIL"):
-		return "NIL"
+		return "NILM"
 	if upper.startswith("LSIL"):
 		return "LSIL"
 	if upper.startswith("HSIL"):
