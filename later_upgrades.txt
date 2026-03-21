@@ -2,3 +2,6 @@ some future ideas:
 - early stopping
 - train a bit longer, 15-20 total epochs?
 - use an lr scheduler (ReduceLROnPlateau?) or cosine decay maybe
+
+to report
+add further ideas portion, add methodology, and make it a full formal paper (though not necessarily publishing-worthy)
