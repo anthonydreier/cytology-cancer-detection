@@ -1,4 +1,4 @@
-# Cytology Cancer Detection
+# Cervical Cytology Image Classification on the BMT Dataset Using Transfer Learning
 
 Classification of cervical cytology images into NILM, LSIL, and HSIL using transfer learning.
 
