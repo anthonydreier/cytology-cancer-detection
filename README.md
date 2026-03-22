@@ -12,8 +12,10 @@ Classification of cervical cytology images into NILM, LSIL, and HSIL using trans
 - `report/`: short report PDF
 
 ## Setup
-
+Only tested on Python 3.12.3
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 python src/sanity_check.py
 python src/make_index.py
